@@ -2,26 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap');
+body{
+    background-color: #DFDCD3;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Noto Serif', serif;
+    letter-spacing: 0em;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+p{
+    font-size: 14px;
+    font-weight: 400;
+    word-spacing: normal;
+    letter-spacing: 0.2em;
+}
+.accentbtn{
+    background: transparent;
+    border:1px solid white;
+    padding: 15px 20px;
+    color: white;
+}
+.accentbtn:hover{
+    background: #477253;
+    border:none;
+    color: white;
+}
+.accentGreenbtn{
+    background: transparent;
+    border:1px solid #477253;
+    padding: 15px 20px;
+    color: #477253;
+}
+.accentGreenbtn:hover{
+    background: #477253;
+    border:none;
+    color: white;
+}
+.btnAccentColor{
+    background: #477253;
+    padding: 15px 20px;
+    color: white;
+}
+.btnAccentColor:hover{
+    background: transparent;
+    border:1px solid #477253;
+    color: #477253;
+}
+.leftMarginHero{
+    margin-left: 90px;
+}
+.heroSectionSpan{
+    font-family: 'Mr De Haviland', cursive;
 }
