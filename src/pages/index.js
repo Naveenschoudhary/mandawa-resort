@@ -5,6 +5,7 @@ import Header from "@/components/globals/Header";
 import Herosection from "@/components/home/Herosection";
 import BelowHero from "@/components/home/BelowHero";
 import LandScapeSeen from "@/components/home/LandScapeSeen";
+import Footer from "@/components/globals/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Herosection/>
       <BelowHero/>
       <LandScapeSeen/>
+      <Footer/>
     </main>
   );
 }
