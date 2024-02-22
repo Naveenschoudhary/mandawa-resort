@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap');
+
 body{
     background-color: #DFDCD3;
 }
@@ -54,3 +55,4 @@ p{
 .heroSectionSpan{
     font-family: 'Mr De Haviland', cursive;
 }
+  

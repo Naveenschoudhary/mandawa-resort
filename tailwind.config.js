@@ -14,6 +14,10 @@ module.exports = {
       },
       colors:{
         accent:"#477253"
+      },
+      fontSize: {
+        '75': '75px',
+        '55': '55px'
       }
     },
   },
