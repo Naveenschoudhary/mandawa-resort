@@ -5,6 +5,7 @@ import { BlogSectionComponent } from "../section_components/BlogSectionComponent
 export const BlogSection = () => {
 	const blogs = [
 		{
+			id: 1,
 			path: "/images/sectionImages/Blog-img.png",
 			altName: "Blog-Image",
 			blogName:
@@ -12,6 +13,7 @@ export const BlogSection = () => {
 			poster: "ADMIN",
 		},
 		{
+			id: 2,
 			path: "/images/sectionImages/Blog-img.png",
 			altName: "Blog-Image",
 			blogName:
@@ -19,6 +21,7 @@ export const BlogSection = () => {
 			poster: "ADMIN",
 		},
 		{
+			id: 3,
 			path: "/images/sectionImages/Blog-img.png",
 			altName: "Blog-Image",
 			blogName:
@@ -35,6 +38,7 @@ export const BlogSection = () => {
 			<div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3  gap-x-4">
 				{blogs.map((blog) => (
 					<BlogSectionComponent
+						key={blog.id}
 						path={blog.path}
 						blogName={blog.blogName}
 						altName={blog.altName}

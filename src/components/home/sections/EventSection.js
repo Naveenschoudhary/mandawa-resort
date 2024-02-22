@@ -5,18 +5,21 @@ import { EventSectionComponent } from "../section_components/EventSectionCompone
 export const EventSection = () => {
 	const photos = [
 		{
+			id: 1,
 			path: "/images/sectionImages/Banquet-hall-4.png",
 			altName: "Banquet-hall-image",
 			eventName: "Meeting & Confernces",
 			expLink: "#",
 		},
 		{
+			id: 2,
 			path: "/images/sectionImages/Wedding-img.png",
 			altName: "Wedding-image",
 			eventName: "Weddings",
 			expLink: "#",
 		},
 		{
+			id: 3,
 			path: "/images/sectionImages/Venue-img.png",
 			altName: "Venue-image",
 			eventName: "Venues",
@@ -33,6 +36,7 @@ export const EventSection = () => {
 			<div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3  gap-x-4">
 				{photos.map((photo) => (
 					<EventSectionComponent
+						key={photo.id}
 						path={photo.path}
 						altName={photo.altName}
 						eventName={photo.eventName}
