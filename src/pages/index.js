@@ -7,6 +7,7 @@ import { BlogSection } from "@/components/home/sections/BlogSection";
 import { TasteSection } from "@/components/home/sections/TasteSection";
 import BackgroundVideo from "@/components/about/HeroSection";
 import { IMAGE_BASE_URL } from "@/utlis/config";
+import ExploreSection from "@/components/home/sections/ExploreSection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function Home() {
         thumbnailSrc={`${IMAGE_BASE_URL}/PHOTO-2023-07-23-13-41-30.jpg`}
       />
       <WelcomeSection />
+      <ExploreSection/>
       <EventSection />
       <TasteSection />
       <BlogSection />
