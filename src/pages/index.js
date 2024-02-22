@@ -22,7 +22,7 @@ export default function Home() {
       <EventSection />
       <TasteSection />
       <BlogSection />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }
