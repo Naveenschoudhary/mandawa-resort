@@ -12,7 +12,7 @@ const open_sans = Open_Sans({
 
 export const ExploreSectionComponent = (props) => {
 	return (
-		<div className="my-10 container mx-auto m-4 bg-[#FFF6EA]">
+		<div className="my-5 py-5 container mx-auto m-4 bg-[#FFF6EA]">
 			<SectionHeading
 				mainHeading={props.mainHeading}
 				subHeading={props.subHeading}
@@ -20,37 +20,39 @@ export const ExploreSectionComponent = (props) => {
 			<div>
 				<Link
 					href={props.viewRoomLink}
-					className="flex flex-row justify-center"
+					className="flex flex-row items-center justify-center"
 				>
-					<p className={`${open_sans.className}  text-sm  text-gray-600 hover:font-bold mr-2`}>
+					<p
+						className={`${open_sans.className}  text-sm  text-gray-600 hover:font-bold mr-2`}
+					>
 						view all rooms
 					</p>
-					<FaArrowRightLong className="text-[#E0B279]"/>
+					<FaArrowRightLong className="text-[#E0B279]" />
 				</Link>
 			</div>
 			<div className="mt-5 grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
-				<div className="inset-0 flex items-center justify-center">
+				<div className="inset-0">
 					<Image
 						src={props.imageSrc}
-						height={393.34}
-						width={600}
+						height={457}
+						width={608}
 						alt={props.altName}
 					/>
 				</div>
-				<div>
-					<div className="pt-8 pl-6 pr-5">
-						<h1
-							className={`${open_sans.className}`}
-						>
-							{props.heading}
-						</h1>
-                        <p
-							className={`${open_sans.className} sm:text-base  md:text-sm lg:text-lg xl:text-lg`}
-						>
-							{props.body}
-						</p>
-                        <button className="px-8 py-2 rounded-full border bg-[#E0B279] border-[#FFF6EA] text-[#FFF6EA] hover:bg-[#FFF6EA] hover:border-[#E0B279] hover:text-[#E0B279]">Book Now</button>
-					</div>
+				<div className="flex flex-col justify-center items-start px-36">
+					<h1
+						className={`${open_sans.className} text-center sm:text-base  md:text-sm lg:text-lg xl:text-lg mb-6`}
+					>
+						{props.heading}
+					</h1>
+					<p
+						className={`${open_sans.className} sm:text-base  md:text-sm lg:text-sm xl:text-sm`}
+					>
+						{props.body}
+					</p>
+					<button className="mt-4 px-8 py-2 rounded-full border bg-[#E0B279] border-[#FFF6EA] text-[#FFF6EA] hover:bg-[#FFF6EA] hover:border-[#E0B279] hover:text-[#E0B279]">
+						Explore
+					</button>
 				</div>
 			</div>
 		</div>

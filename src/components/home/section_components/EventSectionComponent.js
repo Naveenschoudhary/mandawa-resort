@@ -16,7 +16,7 @@ const abhaya_libre = Abhaya_Libre({
 
 export const EventSectionComponent = (props) => {
 	return (
-		<div className="my-10 pt-2">
+		<div className="my-5 pt-2">
 			<div className="inset-0 flex items-center justify-center">
 				<Image
 					src={props.path}
