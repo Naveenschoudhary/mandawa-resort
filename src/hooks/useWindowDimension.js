@@ -1,10 +1,16 @@
 import { useState, useEffect } from "react";
 
 function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
+  if (typeof window !== "undefined") {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height,
+    };
+  }
   return {
-    width,
-    height,
+    width: 0,
+    height: 0,
   };
 }
 
@@ -14,12 +20,19 @@ export default function useWindowDimensions() {
   );
 
   useEffect(() => {
+    let resizeTimer;
+
     function handleResize() {
-      setWindowDimensions(getWindowDimensions());
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        setWindowDimensions(getWindowDimensions());
+      }, 200); // Adjust the timeout value according to your needs
     }
 
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }
   }, []);
 
   return windowDimensions;
