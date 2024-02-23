@@ -27,7 +27,7 @@ export const BlogSection = () => {
     },
   ];
   return (
-    <div className="bg-primary">
+    <div className="bg-primary py-8">
       <div className="container mx-auto ">
         <SectionHeading
           mainHeading={"Blogs"}
