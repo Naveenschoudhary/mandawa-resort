@@ -9,6 +9,7 @@ import BackgroundVideo from "@/components/about/HeroSection";
 import { IMAGE_BASE_URL } from "@/utlis/config";
 import ExploreSection from "@/components/home/sections/ExploreSection";
 import HighlightsSectionComponent from "@/components/home/section_components/HighlightsSectionComponent";
+import Testimonials from "@/components/home/section_components/TestimonialSectionComponent";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function Home() {
 			<ExploreSection />
 			<EventSection />
 			<TasteSection />
+			<Testimonials />
 			<BlogSection />
 			{/* <Footer /> */}
 		</main>

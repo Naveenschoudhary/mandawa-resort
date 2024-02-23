@@ -119,7 +119,7 @@ export const ExploreSectionComponent = (props) => {
 					>
 						{props.body}
 					</p>
-					<button className="mt-4 px-8 py-2 rounded-full border bg-[#E0B279] border-[#FFF6EA] text-[#FFF6EA] hover:bg-[#FFF6EA] hover:border-[#E0B279] hover:text-[#E0B279]">
+					<button className="mt-4 px-8 py-2 rounded-full shadow-lg hover:border bg-[#E0B279] border-[#FFF6EA] text-[#FFF6EA] hover:bg-[#FFF6EA] hover:border-[#E0B279] hover:text-[#E0B279]">
 						Explore
 					</button>
 				</div>
