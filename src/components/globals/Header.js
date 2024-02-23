@@ -1,33 +1,38 @@
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const Header = () => {
   return (
-    <header className="border-b border-white/4 min-h-[100px] flex items-center relative" style={{zIndex:"1000"}}>
-    <div className="flex items-center container mx-auto h-full">
-      <div className="text-2xl flex items-center gap-24 font-semibold container mx-auto">
-        <h2 className='text-accent tracking-widest text-md uppercase font-medium'>Mandawa<br/> <span className='tracking-[10px] text-black'>Resort</span> </h2>
-        <ul className="text-black flex gap-8 text-sm font-medium tracking-wider ">
-          <li className='hover:text-accent'>
-            <Link href={"/"}>About Us</Link>
-          </li>
-          <li className='hover:text-accent'>
-            <Link href={"/"}>Contact</Link>
-          </li>
-          <li className='hover:text-accent'>
-            <Link href={"/"}>Rooms</Link>
-          </li>
-        </ul> 
-      </div>
-      <div>
-        <button className="accentbtn whitespace-nowrap transition-colors ease-in duration-200">
-          Book Now
-        </button>
-      </div>
+    <header className="border-b border-white/5 min-h-[100px] flex items-center fixed top-0 w-full bg-[#FFF6EA] z-20">
+      <div className="container mx-auto flex justify-between items-center h-full">
+        {/* Logo */}
+        <div className="w-20 h-20 mx-10 relative">
+          <Image
+            src="/images/logo.png" // Adjust the path to your logo image
+            alt="logo"
+            fill
+            className='object-contain'
+          />
+        </div>
+        {/* Navigation */}
+        <nav className='flex justify-center items-center gap-24 mx-20'>
+          <ul className="text-black flex text-center gap-24 text-sm font-bold tracking-wider">
+            <li className="hover:text-[#E0B279] hover:text-shadow-lg">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="hover:text-[#E0B279] hover:text-shadow-lg">
+              <Link href="/about">About</Link>
+            </li>
+            <li className="hover:text-[#E0B279] hover:text-shadow-lg">
+              <Link href="/contact">Contact Us</Link>
+            </li>
+          </ul>
+          <button className="px-8 py-2 rounded-full border border-[#E0B279] text-[#E0B279] hover:bg-[#E0B279] hover:border-[#FFF6EA] hover:text-[#FFF6EA]">Book Now</button>
+        </nav>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

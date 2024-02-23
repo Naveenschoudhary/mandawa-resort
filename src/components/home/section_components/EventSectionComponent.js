@@ -16,7 +16,7 @@ const abhaya_libre = Abhaya_Libre({
 
 export const EventSectionComponent = (props) => {
 	return (
-		<div className="mt-4 pt-2">
+		<div className="my-5 pt-2">
 			<div className="inset-0 flex items-center justify-center">
 				<Image
 					src={props.path}
@@ -26,8 +26,8 @@ export const EventSectionComponent = (props) => {
 				/>
 			</div>
 			<div className="flex items-center justify-center">
-				<div className="-mt-3 text-center rounded-md text-white bg-green-500 w-1/2  h-auto">
-					<p>Highlights</p>
+				<div className="-mt-3 text-center rounded-md bg-[#E0B279] px-6  h-auto">
+					<p className="text-[#FFF6EA] font-semibold">Highlights</p>
 				</div>
 			</div>
 			<div className="flex-col text-center items-center justify-center">
