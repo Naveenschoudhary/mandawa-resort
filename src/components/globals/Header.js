@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { CiMenuBurger } from "react-icons/ci";
+import { IMAGE_BASE_URL } from "@/utlis/config";
 
 const Menu = [
   {
@@ -26,10 +27,11 @@ const Header = () => {
         {/* Logo */}
         <div className="w-20 h-20 relative">
           <Image
-            src="/images/logo.png"
+            src={`${IMAGE_BASE_URL}logo.png`}
             alt="logo"
-            fill
-            className="object-contain"
+            width={"400"}
+            height={"200"}
+            // className="object-contain"
           />
         </div>
         {/* Navigation */}

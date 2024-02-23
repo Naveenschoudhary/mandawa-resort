@@ -105,7 +105,7 @@ export const ExploreSectionComponent = (props) => {
             </button>
           </div>
 
-          <div className="flex flex-col justify-center px-24 items-start">
+          <div className="flex flex-col justify-center px-4 mt-4  md:px-24 items-start">
             <h1
               className={`${open_sans.className} text-center sm:text-base  md:text-sm lg:text-lg mb-4 `}
             >
