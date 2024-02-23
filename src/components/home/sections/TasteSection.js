@@ -11,40 +11,42 @@ const open_sans = Open_Sans({
 
 export const TasteSection = () => {
   return (
-    <div className="container mx-auto  m-4">
-      <SectionHeading subHeading={"The Taste of Life"} />
-      <div className="flex flex-wrap items-center justify-evenly w-[vw]">
-        <div className="inset-0 m-2">
-          <Image
-            src="/images/sectionImages/Aapno-img.png"
-            height={200}
-            width={550}
-            alt="image"
-          />
+    <div className="bg-primary py-16">
+      <div className="container mx-auto">
+        <SectionHeading subHeading={"The Taste of Life"} mainHeading={"Food"} />
+        <div className="flex flex-wrap items-center justify-evenly w-[vw]">
+          <div className="inset-0 m-2">
+            <Image
+              src="/images/sectionImages/Aapno-img.png"
+              height={200}
+              width={550}
+              alt="image"
+            />
+          </div>
+          <div className="inset-0 m-2">
+            <Image
+              src="/images/sectionImages/Aapno-img.png"
+              height={200}
+              width={550}
+              alt="image"
+            />
+          </div>
         </div>
-        <div className="inset-0 m-2">
-          <Image
-            src="/images/sectionImages/Aapno-img.png"
-            height={200}
-            width={550}
-            alt="image"
-          />
+        <div className="mt-3 p-0">
+          <Link href="#" className="flex flex-row justify-center">
+            <p
+              className={`${open_sans.className}  text-sm text-gray-600 hover:font-bold mr-2`}
+            >
+              explore more
+            </p>
+            <Image
+              src="/right-arrow.png"
+              alt="arrow-icon"
+              width={15}
+              height={10}
+            />
+          </Link>
         </div>
-      </div>
-      <div className="mt-3 p-0">
-        <Link href="#" className="flex flex-row justify-center">
-          <p
-            className={`${open_sans.className}  text-sm text-gray-600 hover:font-bold mr-2`}
-          >
-            explore more
-          </p>
-          <Image
-            src="/right-arrow.png"
-            alt="arrow-icon"
-            width={15}
-            height={10}
-          />
-        </Link>
       </div>
     </div>
   );

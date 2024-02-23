@@ -27,26 +27,28 @@ export const BlogSection = () => {
     },
   ];
   return (
-    <div className="container mx-auto m-4">
-      <SectionHeading
-        mainHeading={"Blogs"}
-        subHeading={"Inspiring Your Next Journey"}
-      />
-      <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3  gap-x-4">
-        {blogs.map((blog) => (
-          <BlogSectionComponent
-            key={blog.id}
-            path={blog.path}
-            blogName={blog.blogName}
-            altName={blog.altName}
-            poster={blog.poster}
-            date={new Date().toLocaleDateString("en-US", {
-              year: "numeric",
-              month: "long",
-              day: "numeric",
-            })}
-          />
-        ))}
+    <div className="bg-primary">
+      <div className="container mx-auto ">
+        <SectionHeading
+          mainHeading={"Blogs"}
+          subHeading={"Inspiring Your Next Journey"}
+        />
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3  gap-x-4">
+          {blogs.map((blog) => (
+            <BlogSectionComponent
+              key={blog.id}
+              path={blog.path}
+              blogName={blog.blogName}
+              altName={blog.altName}
+              poster={blog.poster}
+              date={new Date().toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

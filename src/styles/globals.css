@@ -55,4 +55,14 @@ p{
 .heroSectionSpan{
     font-family: 'Mr De Haviland', cursive;
 }
+
+.videoBg div	video{
+    background-size: cover !important;
+    object-fit: cover !important;
+    transition: opacity 0.5s ease-in-out; /* Customize the transition effect */
+    opacity: 1;
+  }
+  .videoBg div video :not(.react-player__video) {
+    opacity: 0;
+  }
   

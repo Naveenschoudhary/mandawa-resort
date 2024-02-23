@@ -14,21 +14,21 @@ import Testimonials from "@/components/home/section_components/TestimonialSectio
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-	return (
-		<main>
-			<Header />
-			<BackgroundVideo
-				videoSrc={`${IMAGE_BASE_URL}/VIDEO-2024-01-23-12-29-29.mp4`}
-				thumbnailSrc={`${IMAGE_BASE_URL}/PHOTO-2023-07-23-13-41-30.jpg`}
-			/>
-			<WelcomeSection />
-			<HighlightsSectionComponent />
-			<ExploreSection />
-			<EventSection />
-			<TasteSection />
-			<Testimonials />
-			<BlogSection />
-			{/* <Footer /> */}
-		</main>
-	);
+  return (
+    <main>
+      <Header />
+      <BackgroundVideo
+        videoSrc={`${IMAGE_BASE_URL}/VIDEO-2024-01-23-12-29-29.mp4`}
+        thumbnailSrc={`${IMAGE_BASE_URL}/PHOTO-2023-07-23-13-41-30.jpg`}
+      />
+      <WelcomeSection />
+      <HighlightsSectionComponent />
+      <ExploreSection />
+      <EventSection />
+      <TasteSection />
+      <Testimonials />
+      <BlogSection />
+      <Footer />
+    </main>
+  );
 }

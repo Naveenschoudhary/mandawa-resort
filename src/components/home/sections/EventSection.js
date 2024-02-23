@@ -28,21 +28,23 @@ export const EventSection = () => {
   ];
 
   return (
-    <div className="container mx-auto m-4">
-      <SectionHeading
-        mainHeading={"Events"}
-        subHeading={"Personalised, one-of-a-kind Events."}
-      />
-      <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3  gap-x-4">
-        {photos.map((photo) => (
-          <EventSectionComponent
-            key={photo.id}
-            path={photo.path}
-            altName={photo.altName}
-            eventName={photo.eventName}
-            expLink={photo.expLink}
-          />
-        ))}
+    <div className="bg-white">
+      <div className="container mx-auto">
+        <SectionHeading
+          mainHeading={"Events"}
+          subHeading={"Personalised, one-of-a-kind Events."}
+        />
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3  gap-x-4">
+          {photos.map((photo) => (
+            <EventSectionComponent
+              key={photo.id}
+              path={photo.path}
+              altName={photo.altName}
+              eventName={photo.eventName}
+              expLink={photo.expLink}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

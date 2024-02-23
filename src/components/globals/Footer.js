@@ -160,179 +160,148 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa";
 
 const abhay_libre = Abhaya_Libre({
-	weight: "800",
-	subsets: ["latin"],
+  weight: "800",
+  subsets: ["latin"],
 });
 
 const open_sans = Open_Sans({
-	weight: "400",
-	subsets: ["latin"],
+  weight: "400",
+  subsets: ["latin"],
 });
 
 const Footer = () => {
-	return (
-		<footer
-			className={`${open_sans.className} bg-[#131A22] text-white py-8`}
-		>
-			<div className="flex justify-center mb-4">
-				<div className="flex items-center">
-					<Image
-						src="/images/Logo.png"
-						height={97}
-						width={165}
-						alt="Logo"
-						className="mr-2"
-					/>
-				</div>
-			</div>
-			<div className="container mb-3 divide-y-2 gap-y-4 md:divide-x-2 md:divide-y-0 grid sm:grid-cols-1 md:grid-cols-3 mx-auto">
-				{/* Links */}
-				<div className="flex flex-col mt-3 md:mt-0">
-					<h4 className="text-xl font-semibold mb-2 text-center">
-						Useful Links
-					</h4>
-					<div className="flex mx-auto space-x-8">
-						<div>
-							<ul className="space-y-1">
-								<li>
-									<Link
-										href="#"
-										className="hover:text-gray-400"
-									>
-										Luxury Stay
-									</Link>
-								</li>
-								<li>
-									<Link
-										href="#"
-										className="hover:text-gray-400"
-									>
-										Entertainment
-									</Link>
-								</li>
-								<li>
-									<Link
-										href="#"
-										className="hover:text-gray-400"
-									>
-										Dining
-									</Link>
-								</li>
-								<li>
-									<Link
-										href="#"
-										className="hover:text-gray-400"
-									>
-										Events
-									</Link>
-								</li>
-							</ul>
-						</div>
-						<div>
-							<ul className="space-y-1">
-								<li>
-									<Link
-										href="#"
-										className="hover:text-gray-400"
-									>
-										About Us
-									</Link>
-								</li>
-								<li>
-									<Link
-										href="#"
-										className="hover:text-gray-400"
-									>
-										Career
-									</Link>
-								</li>
-								<li>
-									<Link
-										href="#"
-										className="hover:text-gray-400"
-									>
-										Our History
-									</Link>
-								</li>
-								<li>
-									<Link
-										href="#"
-										className="hover:text-gray-400"
-									>
-										Gallery
-									</Link>
-								</li>
-								<li>
-									<Link
-										href="#"
-										className="hover:text-gray-400"
-									>
-										Contact Us
-									</Link>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
+  return (
+    <footer className={`${open_sans.className} bg-[#131A22] text-white py-8`}>
+      <div className="flex justify-center mb-4">
+        <div className="flex items-center">
+          <Image
+            src="/images/Logo.png"
+            height={97}
+            width={165}
+            alt="Logo"
+            className="mr-2"
+          />
+        </div>
+      </div>
+      <div className="container mb-3 divide-y-2 gap-y-4 md:divide-x-2 md:divide-y-0 grid sm:grid-cols-1 md:grid-cols-3 mx-auto">
+        {/* Links */}
+        <div className="flex flex-col mt-3 md:mt-0">
+          <h4 className="text-xl font-semibold mb-2 text-center">
+            Useful Links
+          </h4>
+          <div className="flex mx-auto space-x-8">
+            <div>
+              <ul className="space-y-1">
+                <li>
+                  <Link href="#" className="hover:text-gray-400">
+                    Luxury Stay
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-gray-400">
+                    Entertainment
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-gray-400">
+                    Dining
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-gray-400">
+                    Events
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul className="space-y-1">
+                <li>
+                  <Link href="#" className="hover:text-gray-400">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-gray-400">
+                    Career
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-gray-400">
+                    Our History
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-gray-400">
+                    Gallery
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:text-gray-400">
+                    Contact Us
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-				{/* Contact Details */}
-				<div className="flex flex-col mt-3 md:mt-0 text-xl">
-					<div className="flex items-center flex-col">
-						<FaLocationDot className="mt-2 text-xl text-white" />
-						<p className="mt-2 mb-3 text-center text-white">
-							Sector 77, Gurugram,<br></br> Haryana 122004
-						</p>
-					</div>
-					<div className="flex mt-3 items-center text-center flex-col">
-						<FaPhoneVolume className="text-xl text-white" />
-						<p className="mt-2">+91-7666779997</p>
-						<p className="mt-0 text-xs">(24/7 Open Line)</p>
-					</div>
-				</div>
+        {/* Contact Details */}
+        <div className="flex flex-col mt-3 md:mt-0 text-xl">
+          <div className="flex items-center flex-col">
+            <FaLocationDot className="mt-2 text-xl text-white" />
+            <p className="mt-2 mb-3 text-center text-white">
+              Sector 77, Gurugram,<br></br> Haryana 122004
+            </p>
+          </div>
+          <div className="flex mt-3 items-center text-center flex-col">
+            <FaPhoneVolume className="text-xl text-white" />
+            <p className="mt-2">+91-7666779997</p>
+            <p className="mt-0 text-xs">(24/7 Open Line)</p>
+          </div>
+        </div>
 
-				{/* Social Media */}
-				<div className="flex flex-col items-center">
-					<div className="mt-3 md:mt-0 sm:text-center md:text-center lg:text-left">
-						<h4 className="text-xl font-semibold mb-2">
-							Subscribe Our Newsletter
-						</h4>
-						<input
-							type="email"
-							placeholder="Enter your email address"
-							className="border text-black border-gray-300 rounded-md pl-1 pr-6 w-full focus:outline-none focus:bg-gray-200"
-						/>
-						<button
-							className={`${open_sans.className} block bg-gray-400 text-black text-xs my-2 py-2 px-2 rounded-full hover:text-white hover:bg-gray-600 transition duration-300`}
-						>
-							SUBSCRIBE NOW
-						</button>
-						<h4
-							className={`${abhay_libre.className} text-xl mb-2 text-left`}
-						>
-							Follow Us
-						</h4>
-						<div className="flex items-center">
-							<Link href="#" className="mr-4">
-								<FaFacebookSquare className="hover:drop-shadow-[0_6px_6px_rgba(255,255,255,0.25)] transition duration-100 text-xl text-blue-700" />
-							</Link>
-							<Link href="#" className="mr-4">
-								<FaInstagram className="hover:drop-shadow-[0_6px_6px_rgba(255,255,255,0.25)] transition duration-100 text-xl" />
-							</Link>
-							<Link href="#" className="mr-4">
-								<FaXTwitter className="hover:drop-shadow-[0_7px_7px_rgba(255,255,255,0.25)] transition duration-100 text-xl text-blue-500" />
-							</Link>
-							<Link href="#" className="mr-4">
-								<FaPinterest className="hover:drop-shadow-[0_6px_6px_rgba(255,255,255,0.25)] transition duration-100 text-xl text-red-600" />
-							</Link>
-							<Link href="#">
-								<FaYoutube className="hover:drop-shadow-[0_6px_6px_rgba(255,255,255,0.25)] transition duration-100 text-xl text-red-600" />
-							</Link>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-	);
+        {/* Social Media */}
+        <div className="flex flex-col items-center">
+          <div className="mt-3 md:mt-0 sm:text-center md:text-center lg:text-left">
+            <h4 className="text-xl font-semibold mb-2">
+              Subscribe Our Newsletter
+            </h4>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              className="border text-black border-gray-300 rounded-md pl-1 pr-6 w-full focus:outline-none focus:bg-gray-200"
+            />
+            <button
+              className={`${open_sans.className} block bg-gray-400 text-black text-xs my-2 py-2 px-2 rounded-full hover:text-white hover:bg-gray-600 transition duration-300`}
+            >
+              SUBSCRIBE NOW
+            </button>
+            <h4 className={`${abhay_libre.className} text-xl mb-2 text-left`}>
+              Follow Us
+            </h4>
+            <div className="flex items-center">
+              <Link href="#" className="mr-4">
+                <FaFacebookSquare className="hover:drop-shadow-[0_6px_6px_rgba(255,255,255,0.25)] transition duration-100 text-xl text-blue-700" />
+              </Link>
+              <Link href="#" className="mr-4">
+                <FaInstagram className="hover:drop-shadow-[0_6px_6px_rgba(255,255,255,0.25)] transition duration-100 text-xl" />
+              </Link>
+              <Link href="#" className="mr-4">
+                <FaXTwitter className="hover:drop-shadow-[0_7px_7px_rgba(255,255,255,0.25)] transition duration-100 text-xl text-blue-500" />
+              </Link>
+              <Link href="#" className="mr-4">
+                <FaPinterest className="hover:drop-shadow-[0_6px_6px_rgba(255,255,255,0.25)] transition duration-100 text-xl text-red-600" />
+              </Link>
+              <Link href="#">
+                <FaYoutube className="hover:drop-shadow-[0_6px_6px_rgba(255,255,255,0.25)] transition duration-100 text-xl text-red-600" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
