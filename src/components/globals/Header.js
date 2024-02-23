@@ -11,8 +11,8 @@ const Header = () => {
           <Image
             src="/images/logo.png" // Adjust the path to your logo image
             alt="logo"
-            layout="fill"
-            objectFit="contain"
+            fill
+            className='object-contain'
           />
         </div>
         {/* Navigation */}

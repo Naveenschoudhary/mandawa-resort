@@ -1,5 +1,6 @@
 import React from "react";
 import {ExploreSectionComponent} from "../section_components/ExploreSectionComponent";
+import { useState } from "react";
 
 const ExploreSection = () => {
   return (
@@ -7,7 +8,6 @@ const ExploreSection = () => {
       mainHeading={"Explore"}
       subHeading={"Rooms & Suites"}
       viewRoomLink={"www.google.com"}
-      imageSrc={"/images/sectionImages/residence-area 1.png"}
       altName={"Hotel Image"}
       heading={
         "Reminiscent Stay at Aapna Ghar"
