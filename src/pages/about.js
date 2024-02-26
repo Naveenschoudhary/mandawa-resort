@@ -1,15 +1,17 @@
-import HeroSection from "@/components/about/HeroSection";
+import { AboutCarouselSection } from "@/components/about/AboutCarouselSection";
+import { AboutHeroSection } from "@/components/about/AboutHeroSection";
 import Layout from "@/components/globals/Layout";
 import React from "react";
 
 const About = () => {
-  return (
-    <div>
-      <Layout>
-        <HeroSection thumbnailSrc="https://dummyimage.com/1600x1200/" />
-      </Layout>
-    </div>
-  );
+	return (
+		<div>
+			<Layout>
+				<AboutHeroSection />
+				<AboutCarouselSection />
+			</Layout>
+		</div>
+	);
 };
 
 export default About;
