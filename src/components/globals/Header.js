@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { CiMenuBurger } from "react-icons/ci";
@@ -21,19 +21,41 @@ const Menu = [
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isHeaderVisible, setHeaderVisible] = useState(true);
+
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+
+    if (scrollY > 500) {
+      setHeaderVisible(true);
+    } else {
+      setHeaderVisible(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <header className="border-b  border-white/5 max-h-[100px] flex items-center fixed top-0 w-full bg-[#FFF6EA] z-20">
+    <header
+      className={`border-b  border-white/5 max-h-[100px] flex items-center  w-full bg-[#FFF6EA] z-20  ${
+        isHeaderVisible ? "opacity-100 top-0 fixed" : " -translate-y-full"
+      }`}
+    >
       <div className="container mx-auto flex justify-between w-full items-center h-full">
         {/* Logo */}
-        <div className="w-20 h-20 relative">
+        <Link href={"/"}>
           <Image
             src={`${IMAGE_BASE_URL}logo.png`}
             alt="logo"
-            width={"400"}
-            height={"200"}
-            // className="object-contain"
+            width={"120"}
+            height={"80"}
           />
-        </div>
+        </Link>
         {/* Navigation */}
         <nav className="flex justify-center items-center gap-8">
           <ul className="text-black hidden md:flex  text-center gap-6 text-md tracking-wider">

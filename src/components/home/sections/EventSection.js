@@ -8,7 +8,7 @@ export const EventSection = () => {
       id: 1,
       path: "/images/sectionImages/Banquet-hall-4.png",
       altName: "Banquet-hall-image",
-      eventName: "Meeting & Confernces",
+      eventName: "Dining & Food",
       expLink: "#",
     },
     {
@@ -41,7 +41,6 @@ export const EventSection = () => {
               path={photo.path}
               altName={photo.altName}
               eventName={photo.eventName}
-              expLink={photo.expLink}
             />
           ))}
         </div>

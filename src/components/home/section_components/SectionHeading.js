@@ -19,7 +19,7 @@ export const SectionHeading = (props) => {
         )}
       </div>
       <div className="flex items-center justify-center h-74 w-auto pt-2 pb-2 -mt-4 mb-2">
-        <h3 className="text-center 2xl:text-6xl xl:text-5xl lg:text-4xl text-3xl">
+        <h3 className="text-center mb-8 2xl:text-6xl xl:text-5xl lg:text-4xl text-3xl">
           {props.subHeading}
         </h3>
       </div>

@@ -1,21 +1,21 @@
 import React from "react";
 import { WelcomeSectionComponent } from "../section_components/WelcomeSectionComponent";
-
+import { IMAGE_BASE_URL } from "@/utlis/config";
 export const WelcomeSection = () => {
   return (
     <WelcomeSectionComponent
       mainHeading={"Welcome"}
       subHeading={"Luxury and Nature in Harmony"}
-      imageSrc={"/images/sectionImages/residence-area 1.png"}
+      imageSrc={`${IMAGE_BASE_URL}/PHOTO-2023-07-23-13-41-36.jpg`}
       altName={"Hotel Image"}
       about={
-        "AapnoGhar offers myriad possibilities for relaxation, entertainment and recreation with an ethno-modern luxury resort within Delhi/NCR since 1994. Located conveniently on Delhi-Jaipur Expressway on National Highway 8, Gurugram, the 9-acre wonderland exists in harmony with the magic of nature, being a one-stop recreation centre around Delhi/NCR."
+        "In the heart of vibrant Rajasthan, Mandawa Resort welcomes you to a celebration that blends the magic of love with the rich tapestry of our heritage. Tucked away in the charming town of Mandawa, our resort becomes the canvas for your dream wedding, weaving together tradition and modern luxury in the most enchanting way."
       }
       message={
-        "A place that offers everything you have ever dreamed of, created to fullfill your heart's desires and designed to satisfy your dreams of owning a home in a unique place."
+        "A place that offers everything you have ever dreamed of, created to fullfill your heart's desires and designed to satisfy your dreams of having an destination wedding in heart of haritage."
       }
-      name={"Leonardo P."}
-      designation={"Resort Manager"}
+      name={"Surj Mal singh"}
+      designation={"Actor"}
     />
   );
 };

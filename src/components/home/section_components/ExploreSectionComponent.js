@@ -7,6 +7,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
 import { HiOutlineArrowSmLeft } from "react-icons/hi";
+import { IMAGE_BASE_URL } from "@/utlis/config";
 
 const open_sans = Open_Sans({
   weight: "400",
@@ -15,13 +16,11 @@ const open_sans = Open_Sans({
 
 export const ExploreSectionComponent = (props) => {
   const [images, setImages] = useState([
-    "/images/footerbg.jpg",
-    "/images/sectionImages/Blog-img.png",
-    "/images/sectionImages/Venue-img.png",
-    "/images/sectionImages/Wedding-img.png",
-  ]); // Array of image paths
+    "/PHOTO-2023-07-23-13-41-37.jpg",
+    "/PHOTO-2023-07-23-13-41-37%202.jpg",
+  ]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isAutoPlayEnabled, setIsAutoPlayEnabled] = useState(true); // Auto-play images
+  const [isAutoPlayEnabled, setIsAutoPlayEnabled] = useState(true);
 
   // Auto-play images
   useEffect(() => {
@@ -49,25 +48,12 @@ export const ExploreSectionComponent = (props) => {
   };
 
   return (
-    <div className="bg-primary">
+    <div className="bg-primary pb-4 md:pb-12">
       <div className="py-5 container mx-auto relative overflow-hidden">
         <SectionHeading
           mainHeading={props.mainHeading}
           subHeading={props.subHeading}
         />
-        <div className="pb-4">
-          <Link
-            href={props.viewRoomLink}
-            className="flex flex-row items-center justify-center"
-          >
-            <p
-              className={`${open_sans.className}  text-sm my-4  text-gray-600 hover:font-bold`}
-            >
-              view all rooms
-            </p>
-            <FaArrowRightLong className="text-[#E0B279]" />
-          </Link>
-        </div>
         <div className="mt-5 grid  sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
           <div
             className="relative h-96"
@@ -81,9 +67,9 @@ export const ExploreSectionComponent = (props) => {
                 }`}
               >
                 <Image
-                  src={image}
+                  src={`${IMAGE_BASE_URL}${image}`}
                   alt={`image-${index}`}
-                  className="carousel-image"
+                  className="carousel-image rounded"
                   layout="fill"
                   objectFit="cover"
                 />
@@ -92,27 +78,22 @@ export const ExploreSectionComponent = (props) => {
 
             {/* Navigation Arrows */}
             <button
-              className="absolute bottom-4 right-4 text-white text-6xl z-10"
+              className="absolute bottom-4 right-4 text-white text-4xl z-10"
               onClick={prevImage}
             >
               <HiOutlineArrowSmRight />
             </button>
             <button
-              className="absolute bottom-4 right-16 text-white text-6xl z-10"
+              className="absolute bottom-4 right-16 text-white text-4xl z-10"
               onClick={nextImage}
             >
               <HiOutlineArrowSmLeft />
             </button>
           </div>
 
-          <div className="flex flex-col justify-center px-4 mt-4  md:px-24 items-start">
-            <h1
-              className={`${open_sans.className} text-center sm:text-base  md:text-sm lg:text-lg mb-4 `}
-            >
-              {props.heading}
-            </h1>
+          <div className="flex px-4 flex-col justify-center  mt-4  md:px-24 items-start">
             <p
-              className={`${open_sans.className} sm:text-base tracking-wider md:text-sm lg:text-sm xl:text-sm`}
+              className={`${open_sans.className} tracking-wider  md:text-md lg:text-md xl:text-md`}
             >
               {props.body}
             </p>

@@ -11,7 +11,7 @@ const ExploreSection = () => {
       altName={"Hotel Image"}
       heading={"Mandawa resort"}
       body={
-        "Discover Mandawa Resort in (Mandawa), a luxury resort tucked away from the city bustle, to entertain guests with a unique holiday resort in manesar gurgaon experience.Resort in Gurgaon (Gurugram) Delhi is the ideal way to take a break to relax and enjoy a well deserved holiday near delhi."
+        "Discover the lap of luxury at Mandawa Resort's enchanting array of rooms and suites. Each space is meticulously crafted to offer a haven of serenity, providing the perfect respite for you and your loved ones. Immerse yourself in the regal ambience, where the essence of traditional Rajasthani aesthetics harmoniously merges with contemporary comforts. The rooms embody a blend of grandeur and intimacy, ensuring that your stay is as memorable as the festivities themselves. From expansive suites boasting panoramic views to snug rooms adorned with artistic detailing, Mandawa Resort creates an oasis of relaxation amidst the vibrant celebrations. Experience the allure of Rajasthan within the walls of your private retreat, where every moment becomes a celebration of luxury and elegance."
       }
     />
   );
