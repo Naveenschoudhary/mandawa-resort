@@ -16,8 +16,8 @@ const open_sans = Open_Sans({
 
 export const ExploreSectionComponent = (props) => {
   const [images, setImages] = useState([
-    "/PHOTO-2023-07-23-13-41-37.jpg",
-    "/PHOTO-2023-07-23-13-41-37%202.jpg",
+    "PHOTO-2023-07-23-13-41-37.jpg",
+    "PHOTO-2023-07-23-13-41-37%202.jpg",
   ]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isAutoPlayEnabled, setIsAutoPlayEnabled] = useState(true);
@@ -70,8 +70,8 @@ export const ExploreSectionComponent = (props) => {
                   src={`${IMAGE_BASE_URL}${image}`}
                   alt={`image-${index}`}
                   className="carousel-image rounded"
-                  layout="fill"
-                  objectFit="cover"
+                  fill
+                  style={{ objectFit: "cover" }}
                 />
               </div>
             ))}

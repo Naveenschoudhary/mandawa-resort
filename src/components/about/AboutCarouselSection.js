@@ -1,10 +1,11 @@
 import React from "react";
 import { Slider } from "./aboutComponents/Slider";
+import AboutImageBlock from "./AboutImageBlock";
 
 export const AboutCarouselSection = () => {
-	return (
-		<div className="bg-gradient-to-r from-[#c8bdba] to-[#a49d9b] w-full min-h-screen mx-auto grid place-items-center">
-			<Slider />
-		</div>
-	);
+  return (
+    <div className="w-full my-8 container mx-auto grid place-items-center">
+      <Slider />
+    </div>
+  );
 };

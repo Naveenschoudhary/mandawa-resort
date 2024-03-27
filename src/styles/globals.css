@@ -5,9 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap');
 
-body{
-    background-color: #DFDCD3;
-}
 h1, h2, h3, h4, h5, h6{
     font-family: 'Noto Serif', serif;
     letter-spacing: 0em;
@@ -66,3 +63,21 @@ p{
     opacity: 0;
   }
   
+
+  .gridParagraph{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  /* or 171% */
+  
+  letter-spacing: 0.1em;
+  }
+  .gridButton{
+    padding: 5px 36px;
+    background-color: #EBAF82;
+    color: white;
+    margin: 15px 0px;
+  }
+  .griditHeading{
+  font-style: italic;
+  }

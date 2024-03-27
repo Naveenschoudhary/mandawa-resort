@@ -3,6 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { CiMenuBurger } from "react-icons/ci";
 import { IMAGE_BASE_URL } from "@/utlis/config";
+import { Dialog } from "@headlessui/react";
+import BookingFrom from "./BookingForm";
+import CustomModel from "./CustomModal";
 
 const Menu = [
   {
@@ -14,6 +17,10 @@ const Menu = [
     link: "/about",
   },
   {
+    name: "Room",
+    link: "/room",
+  },
+  {
     name: "Contact",
     link: "/contact",
   },
@@ -21,6 +28,7 @@ const Menu = [
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [booking, setBooking] = useState(false);
   const [isHeaderVisible, setHeaderVisible] = useState(true);
 
   const handleScroll = () => {
@@ -40,6 +48,7 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <header
       className={`border-b  border-white/5 max-h-[100px] flex items-center  w-full bg-[#FFF6EA] z-20  ${
@@ -71,11 +80,22 @@ const Header = () => {
           >
             <CiMenuBurger className="text-xl md:hidden" />
           </button>
-          <button className="px-8 py-2 rounded-full border border-[#E0B279] text-[#E0B279] hover:bg-[#E0B279] hover:border-[#FFF6EA] hover:text-[#FFF6EA]">
+          <button
+            onClick={() => {
+              console.log("Book");
+              setBooking(true);
+            }}
+            className="px-8 py-2 rounded-full border border-[#E0B279] text-[#E0B279] hover:bg-[#E0B279] hover:border-[#FFF6EA] hover:text-[#FFF6EA]"
+          >
             Book Now
           </button>
         </nav>
       </div>
+      {booking && (
+        <CustomModel isOpen={booking} setIsOpen={setBooking}>
+          <BookingFrom />
+        </CustomModel>
+      )}
       {menuOpen && (
         <ul className="text-black px-4 py-4 bg-primary md:hidden bg-background w-full top-[100%] absolute flex flex-col  text-start gap-6 text-md tracking-wider">
           {Menu.map((item, i) => (
@@ -83,7 +103,13 @@ const Header = () => {
               <Link href={item.link}>{item.name}</Link>
             </li>
           ))}
-          <button className="px-8 py-2 rounded-full border border-[#E0B279] text-[#E0B279] hover:bg-[#E0B279] hover:border-[#FFF6EA] hover:text-[#FFF6EA]">
+          <button
+            onClick={() => {
+              console.log("Book");
+              setBooking(true);
+            }}
+            className="px-8 py-2 rounded-full border border-[#E0B279] text-[#E0B279] hover:bg-[#E0B279] hover:border-[#FFF6EA] hover:text-[#FFF6EA]"
+          >
             Book Now
           </button>
         </ul>
