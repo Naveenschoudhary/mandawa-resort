@@ -1,5 +1,10 @@
 import React from "react";
 import ReservationForm from "./Reservation";
+import { Passions_Conflict } from "next/font/google";
+const passions_conflict = Passions_Conflict({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 const BookingFormComp = () => {
   return (
@@ -7,7 +12,7 @@ const BookingFormComp = () => {
       <div className="flex  flex-col md:flex-row container">
         <div className=" md:flex-1">
           <div className="pr-8">
-            <h5 className="my-4 font-bold">Terms of Booking</h5>
+            <h5 className={` my-4 text-4xl font-bold`}>Terms of Booking</h5>
             <p className="mr-8">
               Ad nisi voluptate officia non qui ea veniam id incididunt
               consequat elit aute labore est. Labore occaecat laborum ullamco
