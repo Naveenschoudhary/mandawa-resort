@@ -15,15 +15,15 @@ export const BlogSection = () => {
       id: 2,
       path: "/images/sectionImages/Blog-img.png",
       altName: "Blog-Image",
-      blogName: "Get the best night's sleep of your life at these nine hotels",
-      poster: "ADMIN",
+      blogName: "One day itinerary to visit mandawa",
+      poster: "Naveen",
     },
     {
       id: 3,
       path: "/images/sectionImages/Blog-img.png",
       altName: "Blog-Image",
-      blogName: "Get the best night's sleep of your life at these nine hotels",
-      poster: "ADMIN",
+      blogName: "Must have foods to eats in rajasthan",
+      poster: "Naveem",
     },
   ];
   return (
